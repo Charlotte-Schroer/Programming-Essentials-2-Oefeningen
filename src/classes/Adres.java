@@ -19,30 +19,37 @@ public class Adres {
     private int postcode;
     private String woonplaats;
 
-private Adres(String straatnaam, int huisnummer, char bus, int postcode, String woonplaats){
+public Adres(String straatnaam, int huisnummer, char bus, int postcode, String woonplaats){
     setStraatnaam(straatnaam);
     setHuisnummer(huisnummer);
     setBus(bus);
     setPostcode(postcode);
     setWoonplaats(woonplaats);
 }
-private void setStraatnaam(String straatnaam){
+public Adres(String straatnaam, int huisnummer, int postcode, String woonplaats){
+        setStraatnaam(straatnaam);
+        setHuisnummer(huisnummer);
+        this.bus = '/';
+        setPostcode(postcode);
+        setWoonplaats(woonplaats);
+    }
+public void setStraatnaam(String straatnaam){
     this.straatnaam = straatnaam;
 }
-private void setHuisnummer(int huisnummer){
+public void setHuisnummer(int huisnummer){
     this.huisnummer = huisnummer;
 }
-private void setBus(char bus){
+public void setBus(char bus){
     this.bus = bus;
 }
-private void setPostcode(int postcode){
+public void setPostcode(int postcode){
     if(postcode>999 && postcode<10000){
         this.postcode = postcode;
     } else {
         this.postcode = 9999;
     }
 }
-private void setWoonplaats(String woonplaats){
+public void setWoonplaats(String woonplaats){
     this.woonplaats = woonplaats;
 }
 
@@ -61,7 +68,9 @@ public int getPostcode(){
 public String getWoonplaats() {
     return woonplaats;
     }
-public void printAdres(){
-    System.out.println("Adres: " + straatnaam + " " + huisnummer + " bus: " + bus + ", " + postcode + " " + woonplaats);
+@Override
+    public String toString(){
+    return "Adres: " + straatnaam + " " + huisnummer + " bus: " + bus + ", " + postcode + " " + woonplaats;
 }
 }
+
