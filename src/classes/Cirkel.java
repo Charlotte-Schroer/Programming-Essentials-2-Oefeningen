@@ -17,12 +17,12 @@ public class Cirkel {
         this.straal = 0;
         this.kleur = "wit";
     }
-    public Cirkel(float straal, String kleur){
+    public Cirkel(double straal, String kleur){
         this.straal = straal;
         this.kleur = kleur;
     }
 
-    public void setStraal(float straal){
+    public void setStraal(double straal){
         this.straal = straal;
     }
 
