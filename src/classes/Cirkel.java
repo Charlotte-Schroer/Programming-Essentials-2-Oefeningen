@@ -13,15 +13,20 @@ public class Cirkel {
 
     private double straal;
     private String kleur;
-    public Cirkel(){
-        this.straal = 0;
-        this.kleur = "wit";
-    }
+
     public Cirkel(double straal, String kleur){
         this.straal = straal;
         this.kleur = kleur;
     }
-
+    public Cirkel(){
+        this(0.0, "wit");
+    }
+    public Cirkel(double straal){
+        this(straal, "wit");
+    }
+    public Cirkel(String kleur){
+        this(0.0, kleur);
+    }
     public void setStraal(double straal){
         this.straal = straal;
     }
@@ -38,8 +43,13 @@ public class Cirkel {
         return this.kleur;
     }
 
-    public void print(){
+    /*public void print(){
         System.out.println("De straal van deze cirkel is: " + straal + " en heeft " + kleur + " als kleur.");
+    } */
+
+    @Override
+    public String toString(){
+        return "Een cirkel met straal " + straal + " en kleur " + kleur;
     }
 
     public double geefOmtrek(){
