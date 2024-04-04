@@ -54,7 +54,8 @@ private double maxBrandstof;
     }
 
     public void printAuto(){
-        System.out.println("Auto met " + kilometerteller + " km op de teller en een verbruik van " + verbruik + " liter per 100 km heeft " + brandstof + " in de tank.");
+        System.out.println("Auto met " + kilometerteller + " km op de teller en een verbruik van "
+                + verbruik + " liter per 100 km heeft " + brandstof + " in de tank.");
     }
 
     public double drive(double afstand){
