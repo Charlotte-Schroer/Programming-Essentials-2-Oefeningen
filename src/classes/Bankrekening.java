@@ -31,8 +31,32 @@ public class   Bankrekening {
         this.bedrag = bedrag;
     }
 
+    private void stortenBankrekening(double gestortBedrag){
+        bedrag += gestortBedrag;
+    }
+
+    private void afhalenBankrekening(double afhaling){
+        bedrag -= afhaling;
+        if(bedrag < -1000){
+            System.out.println("Error, te weinig geld, afhaling geweigerd");
+            bedrag += afhaling;
+        }
+    }
+
     @Override
     public String toString(){
         return "De bankrekening heeft een bedrag van: " + bedrag;
     }
+
+    public static void main(String[] args){
+        Bankrekening kbc = new Bankrekening(25.36);
+        System.out.println(kbc);
+        kbc.setBedrag(85.36);
+        System.out.println(kbc);
+        kbc.afhalenBankrekening(9638);
+        System.out.println(kbc);
+        kbc.stortenBankrekening(25.3);
+        System.out.println(kbc);
+    }
 }
+
