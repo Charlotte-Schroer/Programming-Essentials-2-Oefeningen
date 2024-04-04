@@ -33,7 +33,7 @@ private double maxBrandstof;
     }
     //consumptie wel meegeven
     public Auto(double verbruik){
-        this(0.0, 0.0, verbruik )
+        this(0.0, 0.0, verbruik );
     }
 
 //enkel de fabrikant kan dit instellen
@@ -53,8 +53,25 @@ private double maxBrandstof;
         brandstof = maxBrandstof;
     }
 
+    public void printAuto(){
+        System.out.println("Auto met " + kilometerteller + " km op de teller en een verbruik van " + verbruik + " liter per 100 km heeft " + brandstof + " in de tank.");
+    }
+
+    public double drive(double afstand){
+        afstand = Math.abs(afstand);
+        double brandstofNodig = afstand / 100 * verbruik;
+        if(brandstofNodig > brandstof){
+          afstand = brandstof * 100 / verbruik;
+          brandstof = 0;
+        } else {
+            brandstof -= brandstofNodig;
+        }
+        kilometerteller += afstand;
+        return afstand;
+    }
+
     @Override
     public String toString(){
-        return "Auto met " + kilometerteller + " km op de teller en een brbruik van " + verbruik + " liter per 100 km(" + brandstof + " in de tank en een max hoeveelheid van " +maxBrandstof+ "liter)";
+        return "Auto met " + kilometerteller + " km op de teller en een verbruik van " + verbruik + " liter per 100 km(" + brandstof + " in de tank en een max hoeveelheid van " +maxBrandstof+ "liter)";
     };
 }
