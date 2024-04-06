@@ -1,4 +1,18 @@
 package inheritance.beestjes.soorten;
 
-public class Noordzeezalm {
+import inheritance.beestjes.Vis;
+
+import java.util.Date;
+
+public class Noordzeezalm extends Vis {
+
+    public Noordzeezalm(Date geboortedatum){
+        super(geboortedatum);
+    }
+
+    @Override
+    public String maakGeluid() {
+        return "BlubBlubBlub!";
+    }
+
 }

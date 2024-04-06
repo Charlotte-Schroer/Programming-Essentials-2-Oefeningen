@@ -1,4 +1,18 @@
 package inheritance.beestjes.soorten;
 
-public class Pinguin {
+import inheritance.beestjes.Vogel;
+
+import java.util.Date;
+
+public class Pinguin extends Vogel {
+
+    public Pinguin(Date geboortedatum){
+        super(geboortedatum);
+    }
+
+    @Override
+    public String maakGeluid() {
+        return "Pinguin!";
+    }
+
 }

@@ -1,5 +1,6 @@
 package inheritance.beestjes.soorten;
 
+import inheritance.beestjes.Dier;
 import inheritance.beestjes.Vogel;
 
 import java.util.Date;
