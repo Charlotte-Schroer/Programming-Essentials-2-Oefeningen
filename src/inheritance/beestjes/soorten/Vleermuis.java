@@ -15,4 +15,8 @@ public class Vleermuis extends Zoogdier {
     public String maakGeluid() {
         return "Vleermuuuuuiiiiiis!!!";
     }
+
+    public void vlieg(){
+        System.out.println("Vleermuis: " + maakGeluid());
+    }
 }

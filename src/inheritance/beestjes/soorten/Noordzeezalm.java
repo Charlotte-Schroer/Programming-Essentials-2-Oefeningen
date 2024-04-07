@@ -14,5 +14,7 @@ public class Noordzeezalm extends Vis {
     public String maakGeluid() {
         return "BlubBlubBlub!";
     }
-
+    public void zwem(){
+        System.out.println("Noordzeezalm: " + maakGeluid());
+    }
 }

@@ -15,4 +15,7 @@ public class Pinguin extends Vogel {
         return "Pinguin!";
     }
 
+    public void zwem(){
+        System.out.println("Pinguin: " + maakGeluid());
+    }
 }

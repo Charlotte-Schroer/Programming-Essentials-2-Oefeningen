@@ -15,4 +15,8 @@ public class Kikker extends Amfibie {
     public String maakGeluid() {
         return "Kwak kwak kwak!";
     }
+
+    public void zwem(){
+        System.out.println("Kikker: " + maakGeluid());
+    }
 }

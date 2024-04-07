@@ -1,9 +1,14 @@
 package inheritance.beestjes;
 
+import java.util.Arrays;
 import java.util.Date;
 
 public abstract class Dier {
     private Date geboortedatum;
+    public String kooi[];
+    public String vijver[];
+    public int dierenKooi;
+    public int dierenVijver;
 
     public Date getGeboortedatum() {
         return geboortedatum;
@@ -15,6 +20,10 @@ public abstract class Dier {
 
     public Dier(Date geboortedatum){
         this.geboortedatum = geboortedatum;
+        kooi = new String[100];
+        vijver = new String[100];
+        dierenKooi = 0;
+        dierenVijver = 0;
     }
 
     @Override
@@ -22,5 +31,11 @@ public abstract class Dier {
         return "Dier geboren op: " + geboortedatum;
     }
     public abstract String maakGeluid();
+    public void addKooi(){
+
+    }
+    public void addVijver(){
+
+    }
 
 }
