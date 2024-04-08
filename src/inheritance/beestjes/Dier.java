@@ -1,24 +1,25 @@
 package inheritance.beestjes;
 
+import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.Date;
 
 public abstract class Dier {
-    private Date geboortedatum;
+    private LocalDate geboortedatum;
     public String kooi[];
     public String vijver[];
     public int dierenKooi;
     public int dierenVijver;
 
-    public Date getGeboortedatum() {
+    public LocalDate getGeboortedatum() {
         return geboortedatum;
     }
 
-    public void setGeboortedatum(Date geboortedatum) {
+    public void setGeboortedatum(LocalDate geboortedatum) {
         this.geboortedatum = geboortedatum;
     }
 
-    public Dier(Date geboortedatum){
+    public Dier(LocalDate geboortedatum){
         this.geboortedatum = geboortedatum;
         kooi = new String[100];
         vijver = new String[100];

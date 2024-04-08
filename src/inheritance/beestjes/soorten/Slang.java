@@ -2,11 +2,12 @@ package inheritance.beestjes.soorten;
 
 import inheritance.beestjes.Reptiel;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public class Slang extends Reptiel {
 
-    public Slang(Date geboortedatum){
+    public Slang(LocalDate geboortedatum){
         super(geboortedatum);
     }
 

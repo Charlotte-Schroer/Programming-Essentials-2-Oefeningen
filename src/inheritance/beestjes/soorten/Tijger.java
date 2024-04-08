@@ -3,11 +3,12 @@ package inheritance.beestjes.soorten;
 import inheritance.Zwembad;
 import inheritance.beestjes.Zoogdier;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public class Tijger extends Zoogdier {
 
-    public Tijger(Date geboortedatum){
+    public Tijger(LocalDate geboortedatum){
         super(geboortedatum);
     }
 

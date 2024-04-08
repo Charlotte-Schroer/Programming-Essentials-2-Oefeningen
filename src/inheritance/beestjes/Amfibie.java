@@ -1,10 +1,11 @@
 package inheritance.beestjes;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public abstract class Amfibie extends Dier{
 
-    public Amfibie(Date geboortedatum) {
+    public Amfibie(LocalDate geboortedatum) {
         super(geboortedatum);
     }
 

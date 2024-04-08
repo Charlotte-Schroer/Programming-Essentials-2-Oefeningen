@@ -1,9 +1,10 @@
 package inheritance.beestjes;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public abstract class Zoogdier extends Dier {
-    public Zoogdier(Date geboortedatum) {
+    public Zoogdier(LocalDate geboortedatum) {
         super(geboortedatum);
     }
 

@@ -3,11 +3,12 @@ package inheritance.beestjes.soorten;
 import inheritance.beestjes.Vogel;
 import inheritance.beestjes.Zoogdier;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public class Vleermuis extends Zoogdier {
 
-    public Vleermuis(Date geboortedatum){
+    public Vleermuis(LocalDate geboortedatum){
         super(geboortedatum);
     }
 

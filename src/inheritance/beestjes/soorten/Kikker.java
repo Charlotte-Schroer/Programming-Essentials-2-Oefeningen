@@ -3,11 +3,12 @@ package inheritance.beestjes.soorten;
 import inheritance.beestjes.Amfibie;
 import inheritance.beestjes.Dier;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public class Kikker extends Amfibie {
 
-    public Kikker(Date geboortedatum){
+    public Kikker(LocalDate geboortedatum){
         super(geboortedatum);
     }
 
