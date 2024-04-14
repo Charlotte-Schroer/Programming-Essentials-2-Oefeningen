@@ -29,7 +29,7 @@ public class Student extends Persoon {
     }
     @Override
     public String toString(){
-        return "Student" + getVoornaam() + " " + getAchternaam() + "\nStudentennummer: " + getStudentennummer() + "\nSpecialisatie: " + getSpecialisatie();
+        return "Student " + getVoornaam() + " " + getAchternaam() + "\nStudentennummer: " + getStudentennummer() + "\nSpecialisatie: " + getSpecialisatie();
 
 
     }
