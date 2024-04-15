@@ -2,7 +2,7 @@ package collections.hard.h1;
 
 public class Products {
 
-    private float price;
+    private int price; // price in cents
     private String brandname;
     private int modelnumber;
 
@@ -10,7 +10,7 @@ public class Products {
         return price;
     }
 
-    public void setPrice(float price) {
+    public void setPrice(int price) {
         this.price = price;
     }
 
@@ -30,7 +30,7 @@ public class Products {
         this.modelnumber = modelnumber;
     }
 
-    public Products(String brandname, int modelnumber, float price){
+    public Products(String brandname, int modelnumber, int price){
         this.brandname = brandname;
         this.modelnumber = modelnumber;
         this.price = price;
