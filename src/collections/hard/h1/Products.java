@@ -6,7 +6,7 @@ public class Products {
     private String brandname;
     private int modelnumber;
 
-    public float getPrice() {
+    public int getPrice() {
         return price;
     }
 

@@ -8,7 +8,7 @@ public class Smartwatches extends Products{
         return screenSmartwatch;
     }
 
-    public Smartwatches(String brandname, int modelnumber, float price, ScreenSmartwatches screenSmartwatch) {
+    public Smartwatches(String brandname, int modelnumber, int price, ScreenSmartwatches screenSmartwatch) {
         super(brandname, modelnumber, price);
         this.screenSmartwatch = screenSmartwatch;
     }
