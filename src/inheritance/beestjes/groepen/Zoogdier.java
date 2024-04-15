@@ -1,4 +1,6 @@
-package inheritance.beestjes;
+package inheritance.beestjes.groepen;
+
+import inheritance.beestjes.Dier;
 
 import java.time.LocalDate;
 import java.util.Date;

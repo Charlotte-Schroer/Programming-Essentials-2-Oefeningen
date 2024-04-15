@@ -1,10 +1,8 @@
-package inheritance.beestjes.soorten;
+package inheritance.beestjes.groepen.soorten;
 
-import inheritance.beestjes.Amfibie;
-import inheritance.beestjes.Dier;
+import inheritance.beestjes.groepen.Amfibie;
 
 import java.time.LocalDate;
-import java.util.Date;
 
 public class Kikker extends Amfibie {
 

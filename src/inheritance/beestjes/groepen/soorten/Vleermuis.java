@@ -1,10 +1,8 @@
-package inheritance.beestjes.soorten;
+package inheritance.beestjes.groepen.soorten;
 
-import inheritance.beestjes.Vogel;
-import inheritance.beestjes.Zoogdier;
+import inheritance.beestjes.groepen.Zoogdier;
 
 import java.time.LocalDate;
-import java.util.Date;
 
 public class Vleermuis extends Zoogdier {
 

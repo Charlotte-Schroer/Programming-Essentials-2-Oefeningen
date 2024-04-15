@@ -1,10 +1,8 @@
-package inheritance.beestjes.soorten;
+package inheritance.beestjes.groepen.soorten;
 
-import inheritance.beestjes.Dier;
-import inheritance.beestjes.Vogel;
+import inheritance.beestjes.groepen.Vogel;
 
 import java.time.LocalDate;
-import java.util.Date;
 
 public class Eend extends Vogel {
 

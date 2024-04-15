@@ -1,9 +1,8 @@
-package inheritance.beestjes.soorten;
+package inheritance.beestjes.groepen.soorten;
 
-import inheritance.beestjes.Reptiel;
+import inheritance.beestjes.groepen.Reptiel;
 
 import java.time.LocalDate;
-import java.util.Date;
 
 public class Slang extends Reptiel {
 

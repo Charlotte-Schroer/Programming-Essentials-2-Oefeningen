@@ -1,9 +1,8 @@
-package inheritance.beestjes.soorten;
+package inheritance.beestjes.groepen.soorten;
 
-import inheritance.beestjes.Vis;
+import inheritance.beestjes.groepen.Vis;
 
 import java.time.LocalDate;
-import java.util.Date;
 
 public class Noordzeezalm extends Vis {
 
