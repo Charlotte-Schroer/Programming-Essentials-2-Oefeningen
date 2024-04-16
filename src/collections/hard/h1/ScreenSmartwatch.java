@@ -1,5 +1,5 @@
 package collections.hard.h1;
 
-public enum ScreenSmartwatches {
+public enum ScreenSmartwatch {
     ROUND, SQUARED;
 }

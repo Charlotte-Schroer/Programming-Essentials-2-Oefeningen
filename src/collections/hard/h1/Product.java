@@ -1,6 +1,6 @@
 package collections.hard.h1;
 
-public class Products {
+public class Product {
 
     private int price; // price in cents
     private String brandname;
@@ -30,7 +30,7 @@ public class Products {
         this.modelnumber = modelnumber;
     }
 
-    public Products(String brandname, int modelnumber, int price){
+    public Product(String brandname, int modelnumber, int price){
         this.brandname = brandname;
         this.modelnumber = modelnumber;
         this.price = price;
