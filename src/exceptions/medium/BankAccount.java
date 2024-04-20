@@ -16,7 +16,7 @@ public class BankAccount {
         this.balance = 0.0;
     }
 
-    public double getBalance() {
+    public static double getBalance() {
         return balance;
     }
 
