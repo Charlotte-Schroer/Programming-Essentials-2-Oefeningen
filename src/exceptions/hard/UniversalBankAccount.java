@@ -8,7 +8,7 @@ import java.util.TreeSet;
 
 public class UniversalBankAccount extends BankAccount {
 
-    private static TreeSet<Persoon> proxy;
+    private TreeSet<Persoon> proxy;
 
     public UniversalBankAccount(double balance, TreeSet<Persoon> proxy) {
         super(balance);
@@ -43,10 +43,8 @@ public class UniversalBankAccount extends BankAccount {
     public void showProxy() {
         System.out.println(proxy);
     }
-
-    @Override
-    public static void withdraw(Double money, Persoon persoon) throws NoProxyException, InsufficientBalance {
-        if (proxy.contains(persoon)) {
+    public void withdraw(Double money, Persoon persoon) throws NoProxyException, InsufficientBalance {
+        if (this.proxy.contains(persoon)) {
             double balance = getBalance();
             balance -= money;
             if (balance < -1000) {

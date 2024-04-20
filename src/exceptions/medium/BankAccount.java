@@ -2,7 +2,7 @@ package exceptions.medium;
 
 public class BankAccount {
 
-    private static double balance;
+    private double balance;
 
     public  BankAccount(double balance) {
         if(balance <= 0.0){
@@ -16,7 +16,7 @@ public class BankAccount {
         this.balance = 0.0;
     }
 
-    public static double getBalance() {
+    public double getBalance() {
         return balance;
     }
 
@@ -28,7 +28,7 @@ public class BankAccount {
         balance += money;
     }
 
-    public static void withdraw(double money) throws InsufficientBalance {
+    public void withdraw(double money) throws InsufficientBalance {
         balance -= money;
         if(balance < -1000){
             balance += money;
@@ -39,7 +39,7 @@ public class BankAccount {
     public static void main(String[] args) {
         BankAccount bank1 = new BankAccount(523);
         try {
-            withdraw(9688);
+            bank1.withdraw(9688);
         } catch (InsufficientBalance e){
             System.out.println(e.getMessage());
         }
