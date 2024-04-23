@@ -10,6 +10,13 @@ public class Artikel implements Serializable {
     private String auteur;
     private String inhoud;
 
+    public Artikel(){
+        this.publicatiedatum = null;
+        this.titel = null;
+        this.auteur = null;
+        this.inhoud = null;
+    }
+
     public Artikel(LocalDate publicatiedatum, String titel, String auteur, String inhoud) {
         this.publicatiedatum = publicatiedatum;
         this.titel = titel;
@@ -52,9 +59,9 @@ public class Artikel implements Serializable {
     @Override
     public String toString() {
         return "Artikel" +
-                "publicatiedatum: " + publicatiedatum +
-                "titel: '" + titel + '\'' +
-                "auteur: '" + auteur + '\'' +
-                "inhoud: '" + inhoud + '\'';
+                "\npublicatiedatum: " + publicatiedatum +
+                "\ntitel: '" + titel + '\'' +
+                "\nauteur: '" + auteur + '\'' +
+                "\ninhoud: '" + inhoud + '\'';
     }
 }
