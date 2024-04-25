@@ -21,27 +21,26 @@ public class PickAnyCardGame {
       Boolean juistGeraden = true;
       int aantalKeerJuist = 0;
 
-      while(juistGeraden && kaart!=null){
+      while(juistGeraden && kaart!=null) {
           nieuweKaart = pickAnyCard();
 
-      System.out.println("Voorspel een hogere(h) of lagere(l) kaart die volgt: antwoord met \"h\" of \"l\".");
-          String invoer = in.nextLine().trim().toLowerCase();
 
+              System.out.println("Voorspel een hogere(h) of lagere(l) kaart die volgt: antwoord met \"h\" of \"l\".");
+              String invoer = in.nextLine().trim().toLowerCase();
 
-
-      if(kaart != null &&((invoer.equals("h") && nieuweKaart.hogerDan(kaart)) || ((invoer.equals("l")) && !nieuweKaart.hogerDan(kaart)))){
-          System.out.println("Goed geraden! ");
-          System.out.println("Eerste kaart was: " + kaart);
-          System.out.println("Nieuwe kaart is: "+nieuweKaart);
-          aantalKeerJuist++;
-          kaart = nieuweKaart;
-      } else {
-          System.out.println("Helaas verkeerd, je hebt " + aantalKeerJuist + " juist geraden.");
-          System.out.println("Eerste kaart was: "+kaart);
-          System.out.println("Nieuwe kaart is: "+nieuweKaart);
-          juistGeraden = false;
-      }
-      }
+              if (kaart != null && ((invoer.equals("h") && nieuweKaart.hogerDan(kaart)) || ((invoer.equals("l")) && !nieuweKaart.hogerDan(kaart)))) {
+                  System.out.println("Goed geraden! ");
+                  System.out.println("Eerste kaart was: " + kaart);
+                  System.out.println("Nieuwe kaart is: " + nieuweKaart);
+                  aantalKeerJuist++;
+                  kaart = nieuweKaart;
+              } else {
+                  System.out.println("Helaas verkeerd, je hebt " + aantalKeerJuist + " juist geraden.");
+                  System.out.println("Eerste kaart was: " + kaart);
+                  System.out.println("Nieuwe kaart is: " + nieuweKaart);
+                  juistGeraden = false;
+              }
+          }
       in.close();
     }
 }
