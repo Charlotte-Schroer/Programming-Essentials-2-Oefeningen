@@ -19,6 +19,7 @@ public class PickAnyCardGame {
       Kaart kaart = pickAnyCard();
       Kaart nieuweKaart;
       Boolean juistGeraden = true;
+      int aantalKeerJuist = 0;
 
       while(juistGeraden && kaart!=null){
           nieuweKaart = pickAnyCard();
@@ -30,13 +31,14 @@ public class PickAnyCardGame {
 
       if(kaart != null &&((invoer.equals("h") && nieuweKaart.hogerDan(kaart)) || ((invoer.equals("l")) && !nieuweKaart.hogerDan(kaart)))){
           System.out.println("Goed geraden! ");
-          System.out.println(kaart);
-          System.out.println(nieuweKaart);
+          System.out.println("Eerste kaart was: " + kaart);
+          System.out.println("Nieuwe kaart is: "+nieuweKaart);
+          aantalKeerJuist++;
           kaart = nieuweKaart;
       } else {
-          System.out.println("Helaas verkeerd");
-          System.out.println(kaart);
-          System.out.println(nieuweKaart);
+          System.out.println("Helaas verkeerd, je hebt " + aantalKeerJuist + " juist geraden.");
+          System.out.println("Eerste kaart was: "+kaart);
+          System.out.println("Nieuwe kaart is: "+nieuweKaart);
           juistGeraden = false;
       }
       }
