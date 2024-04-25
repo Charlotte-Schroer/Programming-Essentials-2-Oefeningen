@@ -1,8 +1,9 @@
 package extra.oef3;
 
+
 import java.util.*;
 
-public class ProductManager<T> {
+public class ProductManager<T>{
     private Map<String, ArrayList<T>> toestellen;
 
     public ProductManager(){
@@ -13,9 +14,11 @@ public class ProductManager<T> {
 
     public void addSmartphone(Smartphone smartphone){
         toestellen.get("Smartphones").add((T) smartphone);
+        sortByName();
     }
     public void addSmartwatch(Smartwatch smartwatch){
         toestellen.get("Smartwatches").add((T) smartwatch);
+        sortByName();
     }
 
     @Override
@@ -54,5 +57,6 @@ public class ProductManager<T> {
             });
         }
     }
+
 
 }
